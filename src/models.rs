@@ -74,12 +74,14 @@ pub struct CreateProcessRequest {
 pub struct ShareProcessRequest {
     pub process_id: String,
     pub supplier_public_key: String,
+    pub client_username: String,
 }
 
 #[derive(Debug, Deserialize)]
 pub struct AccessProcessRequest {
     pub process_id: String,
     pub supplier_public_key: String,
+    pub supplier_username: String,
 }
 
 // Response models para API
